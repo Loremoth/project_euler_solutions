@@ -1,6 +1,14 @@
-product=1
+num = 20
 
-for i in range(1,20):
-    product*=i
+while True:
+    def divisible(n):
+        for i in range(1, 21):
+            if n%i!=0:
+                return False
+        else:
+            return True
 
-print(product)
+    num+=20
+    if divisible(num):
+        print(num)
+        break
